@@ -4,15 +4,21 @@ def evaluate_polynomial(degree, x, constant_term, *coefficients):
     # TODO: Return final polynomial result
     p = constant_term
     k = 1
-    while k < degree:
-        p = p + x * coefficients
+    while k <= degree:
+        p = p + x**k * coefficients
         k = k + 1
     return p
-    pass
 
 if __name__ == "__main__":
     # TODO: Add main program loop
     # TODO: Get user input for degree, x, constant term, and coefficients
     # TODO: Call evaluate_polynomial function
     # TODO: Ask user if they want to run again
+    while true:
+        degree = input()
+        x = input()
+        constant_term = input()
+        coefficients = input()
+        evaluate_polynomial(degree, x, constant_term, coefficients)
+        
     pass
