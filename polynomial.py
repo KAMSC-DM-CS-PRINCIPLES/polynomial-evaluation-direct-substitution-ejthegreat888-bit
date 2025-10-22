@@ -5,7 +5,7 @@ def evaluate_polynomial(degree, x, constant_term, *coefficients):
     p = constant_term
     k = 1
     while k <= degree:
-        p = p + x**k * coefficients[k - 1]
+        p = p + x**k * coefficients
         k = k + 1
     return p
 
@@ -22,7 +22,7 @@ if __name__ == "__main__":
         coefficients = []
         for i in degree + 1:
             coefficients.append(input())
-        evaluate_polynomial(degree, x, constant_term, coefficients)
+        print(evaluate_polynomial(degree, x, constant_term, coefficients))
         if input("Run again (y/n)? ") == "n":
             t = False
     pass
