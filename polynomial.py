@@ -14,6 +14,7 @@ if __name__ == "__main__":
     # TODO: Get user input for degree, x, constant term, and coefficients
     # TODO: Call evaluate_polynomial function
     # TODO: Ask user if they want to run again
+<<<<<<< HEAD
     t = True
     while t:
         degree = input()
@@ -26,3 +27,6 @@ if __name__ == "__main__":
         if input("Run again (y/n)? ") == "n":
             t = False
     pass
+=======
+    pass
+>>>>>>> 04edbd8b5ae89535466672b8b16b6d4863b5cc65
